@@ -1,0 +1,98 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|
+//
+
+{
+    "logo": 
+    {
+    	"source": "/home/kxxh/Pictures/wallpaper/profile/_1.png",
+    	"type": "kitty",
+    	"height": 15,
+    	"padding": 
+        {
+            "top": 1,
+            "right": 2
+        }
+    	
+    },
+    "display": 
+    {
+        "separator": " "
+    },
+    "modules": 
+    [
+        "break",
+	    "break",
+	    {
+            "type": "title",
+            "keyWidth": 10,
+            "color": 
+            {
+                "user": "#9ccfd8",
+                "at": "#eb6f92",
+                "host": "#9ccfd8"
+            }
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "\uef46 ",
+            "keyColor": "#eb6f92"
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "#f6c177"
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "#ebbcba" 
+        },
+        {
+            "type": "cpu",
+            "key": "\uf4bc ",
+            "keyColor": "#31748f"
+        },
+        {
+            "type": "gpu",
+            "key": "󰾲 ",
+            "keyColor": "#9ccfd8"
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "#c4a7e7" 
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "#eb6f92" 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "#f6c177" 
+        },
+        {
+            "type": "datetime",
+            "format": "{14}:{15} {1}-{3}-{11}",
+            "key": " ",
+            "keyColor": "#ebbcba" 
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "#31748f" 
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+        },
+        "break",
+        "break"
+    ]
+}
