@@ -2,6 +2,8 @@
 
 A repeatable checklist for provisioning a fresh Fedora + Niri (Wayland compositor) desktop.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a8a1c270-de25-47a8-a9e2-231b2a50cfab" />
+
 ## 1. Base System
 
 ### 1.1 Fedora
