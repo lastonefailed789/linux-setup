@@ -105,6 +105,10 @@ A repeatable checklist for provisioning a fresh Fedora + Niri (Wayland composito
 ## 3. Personal Scripts (`~/.local/bin`)
 - [ ] Restore `display-cycle` script
 - [ ] Restore `ghostty-stack` script
+- [ ] Restore `screenrec` script
+```
+chmod +x ~/.local/bin/ 'SCRIPTS'
+```
 
 ## 4. Cleanup
 - [ ] Uninstall unwanted default apps
@@ -116,8 +120,14 @@ A repeatable checklist for provisioning a fresh Fedora + Niri (Wayland composito
 3. **Scripts last** — these depend on tools installed in steps 1–2 (`jq`, `niri msg`, etc.).
 4. **Cleanup at the end** — easier to spot unwanted bloat once the real setup is in place.
 
-## Single line code for installation
+## Single line code
 
+Installation
 ```
 sudo dnf copr enable -y yalter/niri && sudo dnf copr enable -y scottames/ghostty && sudo dnf copr enable -y wef/cliphist && sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release && sudo dnf install -y "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm" && sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc && sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo' && sudo dnf config-manager addrepo --from-repofile=https://repo.vivaldi.com/stable/vivaldi-fedora.repo && sudo dnf install -y niri noctalia jq grim slurp tesseract tesseract-langpack-eng wl-clipboard cliphist yt-dlp ghostty fastfetch code vivaldi-stable discord && mkdir -p ~/Applications && curl -L "$(curl -s https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest | grep -oP '"browser_download_url":\s*"\K[^"]*\.AppImage')" -o ~/Applications/Obsidian.AppImage && chmod +x ~/Applications/Obsidian.AppImage
+```
+
+chmod
+```
+chmod +x ~/.local/bin/display-cycle ~/.local/bin/ghostty-stack
 ```
